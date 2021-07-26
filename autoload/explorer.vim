@@ -69,7 +69,7 @@ endfunction
 
 function! explorer#Explore()
 
-  let previous_buffer = bufnr()
+  let previous_buffer = bufnr("%")
   let tree = tree#BufferTree()
   let result = buffer#MakeBuffer(tree, previous_buffer)
 
